@@ -1,0 +1,7 @@
+CREATE TABLE Autocarro(
+Targa           CHAR(7),
+Peso_Massimo_T  NUMBER(24,2),
+
+CONSTRAINT FK_AUTOCA FOREIGN KEY (Targa) REFERENCES Mezzo (Targa),
+CONSTRAINT PK_AUTOCA PRIMARY KEY (Targa)
+);

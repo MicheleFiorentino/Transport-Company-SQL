@@ -1,0 +1,7 @@
+CREATE TABLE Autocisterna(
+Targa           CHAR(7),
+Capienza_MAX_lt NUMBER(5,0),
+
+CONSTRAINT FK_AUTOCI FOREIGN KEY (Targa) REFERENCES Mezzo (Targa),
+CONSTRAINT PK_AUTOCI PRIMARY KEY (Targa)
+);

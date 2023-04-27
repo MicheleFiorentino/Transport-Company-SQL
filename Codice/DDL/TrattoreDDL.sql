@@ -1,0 +1,6 @@
+CREATE TABLE Trattore(
+Targa           CHAR(7),
+
+CONSTRAINT FK_TRAT FOREIGN KEY (Targa) REFERENCES Mezzo (Targa),
+CONSTRAINT PK_TRAT PRIMARY KEY (Targa)
+);
